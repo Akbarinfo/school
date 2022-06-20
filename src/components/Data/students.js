@@ -2,6 +2,7 @@ const groupObj = [
   {
     id : 1,
     gId : 1,
+    teacher: 'Javohir Berdiyev',
     name : "Guruh #1",
     status : "Muzlatilgan",
     subject : "Matematika",
@@ -11,6 +12,7 @@ const groupObj = [
   {
     id : 2,
     gId : 13,
+    teacher: 'Scott',
     name : "Guruh #13",
     status : "Aktiv",
     subject : "Ona tili",
@@ -20,6 +22,7 @@ const groupObj = [
   {
     id : 3,
     gId : 14,
+    teacher: 'Saud',
     name : "Guruh #14",
     status : "Aktiv",
     subject : "Ona tili",
@@ -29,6 +32,7 @@ const groupObj = [
   {
     id : 4,
     gId : 16,
+    teacher: "Alisher Kasimov",
     name : "Guruh #16",
     status : "Muzlatilgan",
     subject : "Ingliz tili",
@@ -36,8 +40,9 @@ const groupObj = [
     payment : "150,000",
   },
   {
-    id : 4,
+    id : 5,
     gId : 17,
+    teacher: "Akbarshox",
     name : "Guruh #17",
     status : "Aktiv",
     subject : "Ingliz tili",
@@ -102,78 +107,93 @@ const teacherObj = [
 const studentObj = [
   {
     id : 1,
-    name : "MuhmmadAli Abdufattoxov",
-    group : [1],
+    name : "MuxammadAli Abdufattoxov",
+    group : 2,
     number : "(95) 151-25-12",
     groupNum : 1,
+    status : "Aktiv",
+    payment : "210,000",
   },
   {
     id : 2,
     name : "Akbarali Tengelov",
-    group : [13, 14, 16],
+    group : 1,
     number : "(90) 201-90-25",
     groupNum : 3,
+    status : "Muzlatilgan",
+    payment : "110,000",
   },
   {
     id : 3,
     name : "Muhammadsodiq Koziyev",
-    group : [17, 1],
+    group : 3,
     number : "(99) 119-51-51",
     groupNum : 1,
+    status : "Aktiv",
+    payment : "155,000",
   },
   {
     id : 4,
     name : "Jamoliddin Najmiddinov",
-    group : [13],
+    group : 4,
     number : "(94) 251-21-21",
     groupNum : 1,
-
+    status : "Muzlatilgan",
+    payment : "180,000",
   },
   {
     id : 5,
     name : "Aziz Rakhim",
-    group : [14],
+    group : 2,
     number : "(95) 011-36-33",
     groupNum : 1,
-
+    status : "Aktiv",
+    payment : "230,000",
   },
   {
     id : 6,
     name : "Samandar Bohodirov",
-    group : [16, 17],
+    group : 3,
     number : "(91) 171-99-11",
     groupNum : 1,
-
+    status : "Muzlatilgan",
+    payment : "164,000",
   },
   {
     id : 7,
     name : "Abdulloh G'iyasev",
-    group : [1],
+    group : 2,
     number : "(93) 951-51-49",
     groupNum : 1,
-
+    status : "Muzlatilgan",
+    payment : "122,000",
   },
   {
     id : 8,
     name : "Ulug'bek Vahidov",
-    group : [13],
+    group : 5,
     number : "(73) 501-13-63",
     groupNum : 1,
-
+    status : "Aktiv",
+    payment : "141,000",
   },
   {
     id : 9,
     name : "Allan Unknown",
-    group : [14],
+    group : 3,
     number : "(71) 616-17-91",
     groupNum : 1,
+    status : "Muzlatilgan",
+    payment : "138,000",
   },
   {
     id : 10,
     name : "Abdunozir Unknown",
-    group : [16],
+    group : 4,
     number : "(33) 719-39-51",
     groupNum : 1,
+    status : "Aktiv",
+    payment : "150,000",
   }
 ];
 

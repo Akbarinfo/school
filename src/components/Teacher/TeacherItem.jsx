@@ -1,9 +1,11 @@
 import React from "react";
 import { useContext } from "react";
-import { StudentsContext } from "../store/Students";
+import { TeacherContext } from "../store/Teacher";
 
-export default function StudentsItem() {
-  const {data, dispatch} = useContext(StudentsContext)
+export default function TeacherItem() {
+
+  const {data, dispatch} = useContext(TeacherContext)
+
   const deleteOne = (id) => {
     if(window.confirm('Are you sure')) {
       dispatch({type: 'DEL', payload: {id: id}})
@@ -34,7 +36,7 @@ export default function StudentsItem() {
                 <td className="students__td">
                   <div className="d-flex align-items-center">
                     <div className="students__avabox">
-                      <img className="students__ava" src="https://picsum.photos/id/46/60" alt="user" />
+                      <img className="students__ava" src={item.img} alt="user" />
                     </div>
                     <h3 className="students__names">{item.name}</h3>
                   </div>
@@ -44,7 +46,7 @@ export default function StudentsItem() {
                 <td className="students__td">{item.group} ta</td>
                 <td className="students__td">Yanvar 26, 2020</td>
                 <td className="students__td">{item.status}</td>
-                <td className="students__td">{item.payment}</td>
+                <td className="students__td">UZS {item.payment}</td>
 
                 <td className="students__td">
                   <button className="students__error"><i className='bx bxs-error-circle'></i></button>

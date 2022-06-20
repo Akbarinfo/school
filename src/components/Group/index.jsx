@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Navbar from "../Navbar";
 import Header from "../Navbar/Header";
-import StudentsItem from "./Students";
+import GroupItem from "./GroupItem";
 
-export default function Students() {
+export default function Gruhlar() {
   return(
     <div className="d-flex">
       <Navbar />
@@ -13,21 +12,19 @@ export default function Students() {
         <section className="students">
         <div className="d-flex justify-content-between align-items-center mb-4">
           <div className="d-flex align-items-center">
-            <h2 className="students__title">O'quvchilar</h2>
-            <Link to='/addstudents'>
-              <button className="students__addbtn" type="button">O'quvchi qo'shish </button>
-            </Link>
-
+            <h2 className="students__title">Guruhlar</h2>
+            <button className="students__addbtn" type="button">Guruh qo'shish </button>
           </div>
           <form className="students__form" action="">
-            <input className="students__input" type="text" placeholder="Ismi bo'yicha izlash" />
+            <input className="students__input" type="text" placeholder="Fan, guruh, o'qituvchi yoki ta'lim shakli orqali izlash" />
             <i className='students__icons bx bx-search'></i>
           </form>
         </div>
 
         <p className="students__count">1-7 / 33 tadan</p>
 
-        <StudentsItem />
+        <GroupItem />
+
       </section>
       </main>
     </div>

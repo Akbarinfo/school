@@ -26,7 +26,7 @@ export default function Category() {
     },
     {
       id: random,
-      name: 'Gruhlar',
+      name: 'Guruhlar',
       link: '/group',
       icon: 'bx bxs-group bx-flip-horizontal'
     },

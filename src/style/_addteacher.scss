@@ -1,0 +1,116 @@
+.addteacher {
+  padding: 20px 40px;
+
+  &__title {
+    font-size: 28px;
+    color: rgba(0, 0, 0, 0.699);
+    margin-bottom: 15px;
+  }
+
+  &__main {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 4px;
+    padding: 30px 20px;
+  }
+
+  &__left {
+    width: 50%;
+    height: 80%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 15px;
+  }
+
+  &__imgname {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.699);
+    margin-bottom: 10px;
+  }
+
+  &__imgbox {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__box {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  &__form {
+
+  }
+
+  &__label {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(31, 27, 27, 0.253);
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.699);
+    padding: 8px;
+    margin-bottom: 5px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__name {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+  &__cbtn,
+  &__addbtn {
+    background-color: transparent;
+    border: 1px solid #6ba0f5;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #6ba0f5;
+    padding: 5px 25px;
+    transition: all 0.4s ease;
+    margin-right: 25px;
+
+    &:hover {
+      background-color: #6ba0f5;
+      color: #fff;
+    }
+
+  }
+
+  &__addbtn {
+    background-color: #6ba0f5;
+    color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: #6ba0f5;
+    }
+  }
+
+  &__ {
+
+  }
+  &__ {
+
+  }
+  &__ {
+
+  }
+}
